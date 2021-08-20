@@ -68,7 +68,7 @@ or
 
 **Question:** What are the technologies used in this project?
 
-**Answer:** The technologies used in this project are [React JS](https://pt-br.reactjs.org/) /  [Typescript](https://www.typescriptlang.org/) / [Redux](https://redux.js.org/) / [Styled-Components](https://styled-components.com/) and [Firebase](https://firebase.google.com/?hl=pt)
+**Answer:** The technologies used in this project are [React JS](https://pt-br.reactjs.org/) /  [NextJS](https://nextjs.org//) / [Redux](https://redux.js.org/) / [Tailwindcss](https://tailwindcss.com/) / [Firebase](https://firebase.google.com/?hl=pt) / [FakeStore](https://fakestoreapi.com/) and [Stripe](https://stripe.com/br)
 # :bug: Issues
 
 Feel free to **file a new issue** with a respective title and description on the [ecommerce-nextJS](https://github.com/matheus13f/ecommerce-nextJS/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/matheus13f/ecommerce-nextJS/blob/master/CONTRIBUTING.md) to find out about the coding standards.
