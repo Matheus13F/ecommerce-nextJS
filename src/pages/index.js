@@ -17,6 +17,8 @@ export default function Home({ products }) {
         <ProductFeed products={products} />
       </main>
 
+      {/* AQUI */}
+
     </div>
   );
 }
