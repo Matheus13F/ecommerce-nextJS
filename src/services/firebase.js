@@ -1,4 +1,4 @@
-import firebase from firebase;
+import * as admin from 'firebase-admin';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAk3KeJCAJX21vkpicvE1v5tgPy4_rXIR4",
@@ -8,3 +8,11 @@ const firebaseConfig = {
   messagingSenderId: "1068356265878",
   appId: "1:1068356265878:web:a75a55530c8752f3009fb7"
 };
+
+const app = !admin.apps.length 
+  ? admin.initializeApp(firebaseConfig) 
+  : admin.app();
+
+const db = app.firestore();
+
+export default db;
