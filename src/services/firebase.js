@@ -1,4 +1,4 @@
-import * as admin from 'firebase-admin';
+import firebase from 'firebase-admin';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAk3KeJCAJX21vkpicvE1v5tgPy4_rXIR4",
@@ -9,9 +9,9 @@ const firebaseConfig = {
   appId: "1:1068356265878:web:a75a55530c8752f3009fb7"
 };
 
-const app = !admin.apps.length 
-  ? admin.initializeApp(firebaseConfig) 
-  : admin.app();
+const app = !firebase.apps.length 
+  ? firebase.initializeApp(firebaseConfig) 
+  : firebase.app();
 
 const db = app.firestore();
 

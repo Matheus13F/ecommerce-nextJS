@@ -1,11 +1,12 @@
 import { buffer } from 'micro';
 import * as admin from 'firebase-admin';
+import permissions from '../../../permissions.json';
 
 //SECURE A CONNECTION TO FIREBASE FROM THE BACKEND
-const serviceAccount = require('../../../permissions.json');
+const serviceAccount = require(permissions);
 const app = !admin.apps.length
     ? admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount)
+        credential: admin.credential.cert(serviceAccount),
     })
     : admin.app();
 
@@ -58,6 +59,6 @@ export default async (req, res) => {
 export const config = {
     api: {
         bodyParser: false,
-        externalResolver: true
-    },
+        externalResolver: true,
+    }
 };
