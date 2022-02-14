@@ -1,9 +1,8 @@
 import { buffer } from 'micro';
 import * as admin from 'firebase-admin';
-import permissions from '../../../permissions.json';
 
 //SECURE A CONNECTION TO FIREBASE FROM THE BACKEND
-const serviceAccount = require(permissions);
+const serviceAccount = require('../../../permissions.json');
 const app = !admin.apps.length
     ? admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),

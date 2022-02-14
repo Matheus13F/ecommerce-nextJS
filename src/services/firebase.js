@@ -1,4 +1,4 @@
-import firebase from 'firebase-admin';
+import * as firebase from 'firebase-admin';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAk3KeJCAJX21vkpicvE1v5tgPy4_rXIR4",

@@ -59,8 +59,7 @@ export async function getServerSideProps(context) {
         .collection('users')
         .doc(session.user.email)
         .collection('orders')
-        .orderBy('timestamp', 'desc')
-        .get();
+        .orderBy('timestamp', 'desc').get();
 
     //Stripe orders
     const orders = await Promise.all(
