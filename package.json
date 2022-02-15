@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.3",
-    "@reduxjs/toolkit": "1.5.0",
+    "@reduxjs/toolkit": "^1.7.2",
     "@stripe/stripe-js": "^1.19.1",
     "@tailwindcss/line-clamp": "^0.2.0",
     "axios": "^0.24.0",
-    "firebase": "^9.0.0",
+    "firebase": "^9.6.6",
     "firebase-admin": "^10.0.1",
     "micro": "^9.3.4",
     "moment": "^2.29.1",
