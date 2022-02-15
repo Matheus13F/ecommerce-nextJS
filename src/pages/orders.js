@@ -6,7 +6,6 @@ import Order from "../components/order";
 
 function Orders({ orders }) {
     const [session] = useSession();
-    console.log(orders, 'olha aqui')
 
     return (
         <div>
@@ -43,7 +42,7 @@ function Orders({ orders }) {
 export default Orders;
 
 export async function getServerSideProps(context) {
-    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+    const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
     //get the users logged in credentials
     const session = await getSession(context);
@@ -56,10 +55,11 @@ export async function getServerSideProps(context) {
 
     //Firebase db
     const stripeOrders = await db
-        .collection('users')
-        .doc(session.user.email)
-        .collection('orders')
-        .orderBy('timestamp', 'desc').get();
+		.collection("users")
+		.doc(session.user.email)
+		.collection("orders")
+		.orderBy("timestamp", "desc")
+		.get();
 
     //Stripe orders
     const orders = await Promise.all(
