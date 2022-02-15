@@ -37,12 +37,12 @@ function Header() {
                 <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
                     <div onClick={!session ? signIn : signOut} className='link'>
                         <p>{session ? `Olá, ${session.user.name}` : 'Faça login'}</p>
-                        <p className='font-extrabold md:text-sm'>Conta & Lista</p>
+                        <p className='font-extrabold md:text-sm'>Account & List</p>
                     </div>
 
                     <div onClick={() => router.push('/orders')} className='link'>
-                        <p>Retorno</p>
-                        <p className='font-extrabold md:text-sm'>& Pedidos</p>
+                        <p>Return</p>
+                        <p className='font-extrabold md:text-sm'>& Orders</p>
                     </div>
 
                     <div onClick={() => router.push('/checkout')} className='relative link flex items-center'>
